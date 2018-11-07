@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+    <h1>Forms Exercise</h1>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <div class="login">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <br>
+        <div class="bio">
+            <label for="Bio">Bio:</label>
+            <textarea id="Bio" name="Bio" rows="24" cols="48" placeholder="Tell us a little about yourself!"></textarea>
+        </div>
+        <br>
+        <section class="howHear">
+            <h2>How did you hear about us?</h2>
+            <label for="aboutUs_1">
+                <input id="aboutUs_1" name="aboutUs_1" type="radio" value="billboard">Billboard
+            </label>
+            <br>
+            <label for="aboutUs_2">
+                <input id="aboutUs_2" name="aboutUs_2" type="radio" value="radio_advertisement">Radio Advertisement
+            </label>
+            <br>
+            <label for="aboutUs_3">
+                <input id="aboutUs_3" name="aboutUs_3" type="radio" value="internet_advertisement">Internet Advertisement
+            </label>
+            <br>
+            <label for="aboutUs_4">
+                <input id="aboutUs_4" name="aboutUs_4" type="radio" value="other">Other
+            </label>
+            <br>
+        </section>
+        <section class="browser_type">
+            <h2>Select your browser from the drop down</h2>
+            <select name="browser">
+                <label for="browser_1">
+                    <option id="browser_1" value="gc">Google Chrome</option>
+                </label>
+                <label for="browser_2">
+                    <option id="browser_2" value="ie">Internet Explorer</option>
+                </label>
+                <label for="browser_3">
+                    <option id="browser_3" value="mozilla">Mozilla Firefox</option>
+                </label>
+            </select>
+        </section>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
