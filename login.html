@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action="https://request-inspector.glitch.me">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="username" autofocus="autofocus" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" placeholder="email" required>
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br>
+        <label for="two_week_login">Keep me logged in for 2 weeks</label>
+        <input type="checkbox" id="two_week_login" name="two_week_login" checked>
+        <label for="login"></label>
+        <button id="login" name="login" type="submit">Login</button>
+    </form>
+</body>
+</html>
