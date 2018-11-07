@@ -7,22 +7,27 @@
 <body>
     <h1>Registration Form</h1>
     <form action="https://request-inspector.glitch.me" method="GET">
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username" placeholder="enter username" autofocus="autofocus" required>
-        <br>
-        <label for="email">Email: </label>
-        <input type="text" id="email" name="email" placeholder="enter email address" required>
-        <br>
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" placeholder="enter password" required>
-        <br>
-        <label for="confirm_password">Confirm Password: </label>
-        <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password" required>
-        <br>
-        <label for="checkbox_newsletter"></label>
-        <input type="checkbox" id="checkbox_newsletter" name="checkbox_newsletter" checked>
-        <br>
-        <button type="submit">sign me up for the newsletter</button>
+        <table>
+            <tr>
+                <td><label for="username">Username: </label></td>
+                <td><input type="text" id="username" name="username" placeholder="enter username" autofocus="autofocus" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="text" id="email" name="email" placeholder="enter email address" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password: </label></td>
+                <td><input type="password" id="password" name="password" placeholder="enter password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">Confirm Password: </label></td>
+                <td><input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password" required></td>
+            </tr>
+        </table>
+            <label for="checkbox_newsletter"></label></td>
+            <input type="checkbox" id="checkbox_newsletter" name="checkbox_newsletter" checked>Sign me up for the newsletter
+        <button type="submit">Create New Account</button>
     </form>
 
 </body>
