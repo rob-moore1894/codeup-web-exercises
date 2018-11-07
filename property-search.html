@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search</title>
+</head>
+<body>
+    <h1>Property Search</h1>
+    <form method="GET" action="https://request-inspector.glitch.me/">
+        <label for="property_type">Choose Property Type</label>
+        <select id="property_type" name="property_type">
+            <option value="single_family">Single Family Home</option>
+            <option value="mult_family">Multi-Family Home</option>
+            <option value="townhome">Townhome</option>
+            <option value="condo">Condominium</option>
+            <option value="apartment">Apartment</option>
+        </select>
+        <br>
+        <label for="square_footage">Enter the Square Footage Desired:</label>
+        <input type="text" id="square_footage" name="square_footage" placeholder="sqft">
+        <br>
+        <label for="min_price">What's your minimum price?</label>
+        <input type="text" id="min_price" name="min_price" placeholder="$ MIN">
+        <label for="max_price">What's you maximum price?</label>
+        <input type="text" id="max_price" name="max_price" placeholder="$ MAX">
+        <br>
+        <label for="zipcode">Enter the zipcode you want to search in: </label>
+        <input type="text" id="zipcode" name="zipcode" placeholder="zipcode">
+        <br>
+        <label for="bath">How many baths?</label>
+        <select id="bath" name="bath">
+            <option value="bath_1">1</option>
+            <option value="bath_2">2</option>
+            <option value="bath_3">3</option>
+            <option value="bath_more">4+</option>
+        </select>
+        <label for="beds">How many bedrooms?</label>
+        <select id="beds" name="beds">
+            <option value="beds_1">1</option>
+            <option value="beds_2">2</option>
+            <option value="beds_3">3</option>
+            <option value="beds_more">4+</option>
+        </select>
+        <br>
+        <label for="hoaYes">Would you like to see properties within an HOA?
+            <input id="hoaYes" name="hoa" type="radio" value="hoa_y">Yes</label>
+        <label for="hoaNo">
+            <input id="hoaNo" name="hoa" type="radio" value="hoa_n">No</label>
+        <br>
+        <label for="search">
+            <button id="search" type="submit">Search Now</button>
+        </label>
+    </form>
+
+</body>
+</html>
