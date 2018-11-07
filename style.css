@@ -1,0 +1,9 @@
+img {
+    width: 50%;
+    height: auto;
+}
+
+.fancy-header {
+    color: blue; /* single line comment */
+    text-decoration: underline;
+}
