@@ -1,13 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
 img {
     width: 300px;
     height: 250px;
 }
 
-.fancy-header {
-    color: blue; /* single line comment */
-    text-decoration: underline;
+header {
+    text-align: center;
 }
 
-img:hover {
-    border: 3px solid black;
+.fancy-header {
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 20px;
+    height: 87px;
+    font-family: "Hiragino Kaku Gothic Pro", Arial, sans-serif;
+    color: palevioletred;
 }
+
+h1, h2, hr {
+    text-decoration: underline;
+    color: orangered;
+    margin: 0;
+    text-align: center;
+}
+
+section {
+    background-color: slategray;
+    background-image: url(images/architectural-design-architecture-buildings-830891.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: cursive, Arial, sans-serif;
+}
+
+section li {
+    color: whitesmoke;
+}
+
+ul, ol {
+    margin: 0;
+    text-align: left;
+}
+
+ul li {
+    list-style-type: hiragana;
+}
+
+#product td {
+    border: black solid 1px;
+    background-color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color:magenta;
+}
+
+a:hover {
+    color:blue;
+    font-style: italic;
+}
+
+a:active {
+    color:green;
+}
+
+#coreValues {
+    float: left;
+    width: 33%;
+}
+
+#process {
+    float: left;
+    width: 34%;
+}
+
+#vision {
+    float: left;
+    width: 33%;
+
+}
+
+#companyVision {
+    clear: both;
+}
+
+.topthree {
+    text-align: center;
+}
+
+
