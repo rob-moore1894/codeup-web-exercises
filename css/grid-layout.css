@@ -40,3 +40,7 @@
     display: table;
     clear: both;
 }
+
+.column.full {
+    width: 100%;
+}
