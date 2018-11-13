@@ -20,5 +20,47 @@ button {
 
 .card-header {
     background-color: lightblue;
+    color: blue;
 }
 
+.card {
+    border: 1px solid lightblue;
+    margin: 1em 0;
+}
+
+.card-body {
+    /*border: 1px solid gray;*/
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-header2, .card-footer {
+    background-color: lightgray;
+    /*border: 1px solid gray;*/
+    padding-left: 1em;
+    height: 50px;
+    padding-top: 12px;
+}
+
+.card1 {
+    margin-top: 0;
+    border: 1px solid lightblue;
+}
+
+.card-body.choice {
+    background-color: lightblue;
+    border: 1px solid gray;
+}
+
+.form-group {
+    background-color: lightblue;
+    padding: 1em;
+}
+
+.card2, .card3 {
+    margin-top: 1em;
+    border: 1px solid lightblue;
+}

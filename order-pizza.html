@@ -34,6 +34,7 @@
     <div class= "jumbotron jumbotron-fluid">
         <h1>Welcome to Pizza World!</h1>
     </div>
+    <div class="container">
 <!--Adding h2 and nav tabs-->
     <h2>Build your own pizza!</h2>
 
@@ -51,31 +52,31 @@
 
     <!--Adding Cards with Radio Buttons-->
 
-    <div class="card">
+    <div class="card1">
         <div class="card-header">Choose size and crust</div>
         <div class="card-body">
-            <div class="card-header">Hand Tossed</div>
+            <div class="card-header2">Hand Tossed</div>
             <div class="card-body">Garlic seasoned crust with a rich, buttery taste.</div>
-            <div class="card-body"><input type="radio" class="smallPizza" name="htCrust"> Small (10")</div>
-            <div class="card-body"><input type="radio" class="medPizza" name="htCrust"> Medium (12")</div>
+            <div class="card-body choice"><label for="smallPizza"><input type="radio" class="smallPizza" id="smallPizza"></label> Small (10")</div>
+            <div class="card-body choice"><label for="medPizza"><input type="radio" class="medPizza" id="medPizza" name="htCrust"> Medium (12")</div>
         </div>
         <div class="card-body">
-            <div class="card-header">Thin Crust</div>
+            <div class="card-header2">Thin Crust</div>
             <div class="card-body">Thin enough for optimum crispy to crunchy ratio.</div>
-            <div class="card-body"><input type="radio" class="smallPizza" name="thinCrust"> Small (10")</div>
-            <div class="card-body"><input type="radio" class="medPizza" name="thinCrust"> Medium (12")</div>
+            <div class="card-body choice"><label for="smallPizza"><input type="radio" class="smallPizza" id="smallPizza" name="thinCrust"> Small (10")</div>
+            <div class="card-body choice"><label for="medPizza"><input type="radio" class="medPizza" id="medPizza" name="thinCrust"> Medium (12")</div>
         </div>
         <div class="card-footer"><button>Next Step > </button></div>
     </div>
 
     <!--Adding Cards with Drop Down-->
 
-    <div class="card">
+    <div class="card2">
         <div class="card-header">Choose cheese and sauce</div>
         <div class="card-body">
-            <div class="card-header">Cheese</div>
+            <div class="card-header2"><b>Cheese?</b></div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">How Much?</label>
+                <label for="exampleFormControlSelect1"><strong>How Much?</strong></label>
                 <select class="form-control" id="exampleFormControlSelect1">
                     <option>Light</option>
                     <option>Normal</option>
@@ -85,7 +86,7 @@
             </div>
         </div>
         <div class="card-body">
-                <div class="card-header">Sauce</div>
+                <div class="card-header2">Sauce?</div>
                 <div class="form-group">
                     <label for="sauceSelect">What Type?</label>
                     <select class="form-control" id="sauceSelect">
@@ -108,28 +109,26 @@
                 <button type="button" class="btn">Next Step > </button>
             </div>
         </div>
-
-            <div class="card">
-                <div class="card-header">Choose Toppings</div>
-                <div class="card-body">
-                    <div class="card-header">Choose Meats</div>
-                    <div class="card-body"><input type="checkbox" name="beef" value="beef"> Beef</div>
-                    <div class="card-body"><input type="checkbox" name="ham" value="ham"> Ham</div>
-                    <div class="card-body"><input type="checkbox" name="phillySteak" value="phillySteak"> Philly Steak</div>
-                    <div class="card-body"><input type="checkbox" name="bacon" value="bacon"> Bacon</div>
-                </div>
-                <div class="card-body">
-                    <div class="card-header">Choose Non Meats</div>
-                    <div class="card-body"><input type="checkbox" name="greenPeppers" value="greenPeppers"> Green Peppers</div>
-                    <div class="card-body"><input type="checkbox" name="mushrooms" value="mushrooms"> Mushrooms</div>
-                    <div class="card-body"><input type="checkbox" name="onions" value="onions"> Onions</div>
-                    <div class="card-body"><input type="checkbox" name="jalapeno" value="jalapeno"> Jalapeno Peppers</div>
-                </div>
-                <div class="card-footer"><button>Checkout</button></div>
-            </div>
     </div>
-
-
+    <div class="card3">
+        <div class="card-header">Choose Toppings</div>
+        <div class="card-body">
+            <div class="card-header2">Choose Meats</div>
+            <div class="card-body choice"><input type="checkbox" name="beef" value="beef"> Beef</div>
+            <div class="card-body choice"><input type="checkbox" name="ham" value="ham"> Ham</div>
+            <div class="card-body choice"><input type="checkbox" name="phillySteak" value="phillySteak"> Philly Steak</div>
+            <div class="card-body choice"><input type="checkbox" name="bacon" value="bacon"> Bacon</div>
+        </div>
+        <div class="card-body">
+            <div class="card-header2">Choose Non Meats</div>
+            <div class="card-body choice"><input type="checkbox" name="greenPeppers" value="greenPeppers"> Green Peppers</div>
+            <div class="card-body choice"><input type="checkbox" name="mushrooms" value="mushrooms"> Mushrooms</div>
+            <div class="card-body choice"><input type="checkbox" name="onions" value="onions"> Onions</div>
+            <div class="card-body choice"><input type="checkbox" name="jalapeno" value="jalapeno"> Jalapeno Peppers</div>
+        </div>
+        <div class="card-footer"><button>Checkout</button></div>
+    </div>
+    </div>
 </main>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
