@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #31ab52 !important;
+}
+
+.btn {
+    background-color: white !important;
+}
+
+.container {
+    width: 80%;
+}
+
+.carousel-item>img {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel-caption {
+    background-color:white;
+    opacity: 0.7;
+    color: darkslategray;
+    font-weight: bolder;
+}
