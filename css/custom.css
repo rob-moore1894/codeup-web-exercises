@@ -23,15 +23,6 @@ button {
     color: blue;
 }
 
-.card {
-    border: 1px solid lightblue;
-    margin: 1em 0;
-}
-
-.card-body {
-    /*border: 1px solid gray;*/
-}
-
 .container {
     width: 80%;
     margin: 0 auto;
@@ -39,7 +30,6 @@ button {
 
 .card-header2, .card-footer {
     background-color: lightgray;
-    /*border: 1px solid gray;*/
     padding-left: 1em;
     height: 50px;
     padding-top: 12px;
@@ -53,11 +43,14 @@ button {
 .card-body.choice {
     background-color: lightblue;
     border: 1px solid gray;
+    color: blue;
 }
 
 .form-group {
     background-color: lightblue;
     padding: 1em;
+    font-weight: bold;
+    color: blue;
 }
 
 .card2, .card3 {

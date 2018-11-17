@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
     background-color: #31ab52 !important;
 }
@@ -8,6 +12,7 @@
 
 .container {
     width: 80%;
+    margin: 0 auto;
 }
 
 .carousel-item>img {
@@ -25,4 +30,28 @@
     opacity: 0.7;
     color: darkslategray;
     font-weight: bolder;
+}
+
+.card {
+    width: 25%;
+    display: inline;
+    margin: 1em auto;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+.card:active {
+    border: 3px solid lightgray;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+.card-img-top {
+    height: 286px;
+    width: 286px;
+    object-fit: contain;
 }

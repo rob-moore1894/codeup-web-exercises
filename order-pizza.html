@@ -10,7 +10,9 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Pizza World</a>
+        <a class="navbar-brand" href="#">
+        <img src="images/pizza-delivery.jpg" width="30" height="30" class="d-inline-block align-top" alt="Pizza World logo">
+        Pizza World</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,94 +42,98 @@
 
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" href="#"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
+            <a class="nav-link active" href="#card1"><span class="badge badge-pill badge-secondary">1</span> Size and Crust</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
+            <a class="nav-link" href="#card2"><span class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
+            <a class="nav-link" href="#card3"><span class="badge badge-pill badge-secondary">3</span> Toppings</a>
         </li>
     </ul>
 
     <!--Adding Cards with Radio Buttons-->
-
-    <div class="card1">
-        <div class="card-header">Choose size and crust</div>
-        <div class="card-body">
-            <div class="card-header2">Hand Tossed</div>
-            <div class="card-body">Garlic seasoned crust with a rich, buttery taste.</div>
-            <div class="card-body choice"><label for="smallPizzaHT"><input type="radio" class="smallPizza" id="smallPizzaHT"></label> Small (10")</div>
-            <div class="card-body choice"><label for="medPizzaHT"><input type="radio" class="medPizza" id="medPizzaHT" name="htCrust"></label> Medium (12")</div>
+    <a name="card1">
+        <div class="card1">
+            <div class="card-header">Choose size and crust</div>
+            <div class="card-body">
+                <div class="card-header2">Hand Tossed</div>
+                <div class="card-body">Garlic seasoned crust with a rich, buttery taste.</div>
+                <div class="card-body choice"><label for="smallPizzaHT"><input type="radio" class="smallPizza" id="smallPizzaHT"></label> Small (10")</div>
+                <div class="card-body choice"><label for="medPizzaHT"><input type="radio" class="medPizza" id="medPizzaHT" name="htCrust"></label> Medium (12")</div>
+            </div>
+            <div class="card-body">
+                <div class="card-header2">Thin Crust</div>
+                <div class="card-body">Thin enough for optimum crispy to crunchy ratio.</div>
+                <div class="card-body choice"><label for="smallPizza"><input type="radio" class="smallPizza" id="smallPizza" name="thinCrust"></label> Small (10")</div>
+                <div class="card-body choice"><label for="medPizza"><input type="radio" class="medPizza" id="medPizza" name="thinCrust"></label> Medium (12")</div>
+            </div>
+            <div class="card-footer"><button>Next Step > </button></div>
         </div>
-        <div class="card-body">
-            <div class="card-header2">Thin Crust</div>
-            <div class="card-body">Thin enough for optimum crispy to crunchy ratio.</div>
-            <div class="card-body choice"><label for="smallPizza"><input type="radio" class="smallPizza" id="smallPizza" name="thinCrust"></label> Small (10")</div>
-            <div class="card-body choice"><label for="medPizza"><input type="radio" class="medPizza" id="medPizza" name="thinCrust"></label> Medium (12")</div>
-        </div>
-        <div class="card-footer"><button>Next Step > </button></div>
-    </div>
+    </a>
 
     <!--Adding Cards with Drop Down-->
-
-    <div class="card2">
-        <div class="card-header">Choose cheese and sauce</div>
-        <div class="card-body">
-            <div class="card-header2"><b>Cheese?</b></div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1"><strong>How Much?</strong></label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Light</option>
-                    <option>Normal</option>
-                    <option>Extra</option>
-                    <option>Double</option>
-                </select>
-            </div>
-        </div>
-        <div class="card-body">
-                <div class="card-header2">Sauce?</div>
+    <a name="card2">
+        <div class="card2">
+            <div class="card-header">Choose cheese and sauce</div>
+            <div class="card-body">
+                <div class="card-header2">Cheese?</div>
                 <div class="form-group">
-                    <label for="sauceSelect">What Type?</label>
-                    <select class="form-control" id="sauceSelect">
-                        <option>Tomato Sauce</option>
-                        <option>Marinara Sauce</option>
-                        <option>BBQ Sauce</option>
-                        <option>Alfredo Sauce</option>
-                    </select>
-                    <label for="sauceAmount">How Much?</label>
-                    <select class="form-control" id="sauceAmount">
+                    <label for="exampleFormControlSelect1"><strong>How Much?</strong></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
                         <option>Light</option>
                         <option>Normal</option>
                         <option>Extra</option>
+                        <option>Double</option>
                     </select>
                 </div>
-        </div>
-        <div class="card-footer">
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn"> < Previous Step</button>
-                <button type="button" class="btn">Next Step > </button>
+            </div>
+            <div class="card-body">
+                    <div class="card-header2">Sauce?</div>
+                    <div class="form-group">
+                        <label for="sauceSelect">What Type?</label>
+                        <select class="form-control" id="sauceSelect">
+                            <option>Tomato Sauce</option>
+                            <option>Marinara Sauce</option>
+                            <option>BBQ Sauce</option>
+                            <option>Alfredo Sauce</option>
+                        </select>
+                        <label for="sauceAmount">How Much?</label>
+                        <select class="form-control" id="sauceAmount">
+                            <option>Light</option>
+                            <option>Normal</option>
+                            <option>Extra</option>
+                        </select>
+                    </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn"> < Previous Step</button>
+                    <button type="button" class="btn">Next Step > </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="card3">
-        <div class="card-header">Choose Toppings</div>
-        <div class="card-body">
-            <div class="card-header2">Choose Meats</div>
-            <div class="card-body choice"><label for="beef"><input type="checkbox" id="beef" name="beef" value="beef"></label> Beef</div>
-            <div class="card-body choice"><label for="ham"><input type="checkbox" id="ham" name="ham" value="ham"></label> Ham</div>
-            <div class="card-body choice"><label for="phillySteak"><input type="checkbox" id="phillySteak" name="phillySteak" value="phillySteak"></label> Philly Steak</div>
-            <div class="card-body choice"><label for="bacon"><input type="checkbox" id="bacon" name="bacon" value="bacon"></label> Bacon</div>
-        </div>
-        <div class="card-body">
-            <div class="card-header2">Choose Non Meats</div>
-            <div class="card-body choice"><label for="greenPeppers"></label><input type="checkbox" id="greenPeppers" name="greenPeppers" value="greenPeppers"> Green Peppers</div>
-            <div class="card-body choice"><label for="mushrooms"><input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms"></label> Mushrooms</div>
-            <div class="card-body choice"><label for="onions"><input type="checkbox" id="onions" name="onions" value="onions"></label> Onions</div>
-            <div class="card-body choice"><label for="jalapeno"><input type="checkbox" id="jalapeno" name="jalapeno" value="jalapeno"></label> Jalapeno Peppers</div>
-        </div>
-        <div class="card-footer"><button>Checkout</button></div>
-    </div>
+    </a>
+        <a name="card3">
+            <div class="card3">
+                <div class="card-header">Choose Toppings</div>
+                <div class="card-body">
+                    <div class="card-header2">Choose Meats</div>
+                    <div class="card-body choice"><label for="beef"><input type="checkbox" id="beef" name="beef" value="beef"></label> Beef</div>
+                    <div class="card-body choice"><label for="ham"><input type="checkbox" id="ham" name="ham" value="ham"></label> Ham</div>
+                    <div class="card-body choice"><label for="phillySteak"><input type="checkbox" id="phillySteak" name="phillySteak" value="phillySteak"></label> Philly Steak</div>
+                    <div class="card-body choice"><label for="bacon"><input type="checkbox" id="bacon" name="bacon" value="bacon"></label> Bacon</div>
+                </div>
+                <div class="card-body">
+                    <div class="card-header2">Choose Non Meats</div>
+                    <div class="card-body choice"><label for="greenPeppers"></label><input type="checkbox" id="greenPeppers" name="greenPeppers" value="greenPeppers"> Green Peppers</div>
+                    <div class="card-body choice"><label for="mushrooms"><input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms"></label> Mushrooms</div>
+                    <div class="card-body choice"><label for="onions"><input type="checkbox" id="onions" name="onions" value="onions"></label> Onions</div>
+                    <div class="card-body choice"><label for="jalapeno"><input type="checkbox" id="jalapeno" name="jalapeno" value="jalapeno"></label> Jalapeno Peppers</div>
+                </div>
+                <div class="card-footer"><button>Checkout</button></div>
+            </div>
+        </a>
     </div>
 </main>
 
