@@ -41,10 +41,13 @@ function addHundred() {
 function isPositive(){
     if (userInput > 0) {
         alert(userInput + " is a positive number!");
-    } else {
+    } else if (userInput < 0) {
         alert(userInput + " is a negative number!");
+    } else {
+        alert("Your number is 0!");
     }
 }
+
 
 /* ########################################################################## */
 
