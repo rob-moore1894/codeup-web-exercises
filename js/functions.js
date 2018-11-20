@@ -69,9 +69,11 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(a, b) {
-    var a = a * 0.01;
-    return (a * b).toFixed(2);
+alert("Starting Calculate Tip amount exercise");
+
+function calculateTip(percentToTip, totalBill) {
+    var tipPercentage = percentToTip * 0.01;
+    return (tipPercentage * totalBill).toFixed(2);
 }
 console.log(calculateTip(20, 20));
 console.log(calculateTip(25, 25.50));
@@ -83,8 +85,8 @@ console.log(calculateTip(15, 33.42));
  * then display the dollar amount they should tip
  */
 
-var percentTip = prompt("What percent of tip would you like to leave?");
-var totalBill = prompt("What is the total bill?");
+var percentTip = parseFloat(prompt("What percent of tip would you like to leave? Whole numbers only, please!"));
+var totalBill = parseFloat(prompt("What is the total bill?"));
 
 console.log(calculateTip(percentTip,totalBill));
 alert("Total tip = $" + calculateTip(percentTip,totalBill));
@@ -104,13 +106,15 @@ alert("Total tip = $" + calculateTip(percentTip,totalBill));
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-var originalPrice = prompt("What is the total price?");
+alert("Starting Apply Discount Exercise");
+
+var originalPrice = parseFloat(prompt("What is the total price of everything purchased?"));
 var discountPercent = .2;
 
-function applyDiscount (x, y) {
-    var discountPrice = x * y;
-    var totalCost = x - discountPrice;
-    return totalCost;
+function applyDiscount (originalPrice, discountPercent) {
+    var discountPrice = originalPrice * discountPercent;
+    return originalPrice - discountPrice;
+
 }
 
 console.log(applyDiscount(originalPrice,discountPercent));
