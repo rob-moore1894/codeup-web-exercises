@@ -1,27 +1,29 @@
 "use strict";
 
 alert("TRAFFIC LIGHT AHEAD!");
-var lightColor = prompt("What color is the light?").toLowerCase();
 
-
-    function getLightColor(input) {
-        if (input === "red" || input === "yellow" || input === "green") {
-            if (input === "red") {
+    function getLightColor(lightColor) {
+        var lightColor = prompt("What color is the light?").toLowerCase();
+        if (lightColor === "red" || lightColor === "yellow" || lightColor === "green") {
+            if (lightColor === "red") {
                 alert("STOP!");
-            } else if (input === "yellow") {
+            } else if (lightColor === "yellow") {
                 var spaceToStop = confirm("Is there space to stop safely?");
                 if (spaceToStop === true) {
                     alert("STOP!");
                 } else {
                     alert("Beat the light!");
                 }
-            } else if (input === "green") {
+            } else if (lightColor === "green") {
                 alert("Then go! Easy decision...");
             }
         } else {
-                getLightColor();
+                getLightColor(lightColor);
             }
     }
+
+    getLightColor(lightColor);
+
 
 
 
