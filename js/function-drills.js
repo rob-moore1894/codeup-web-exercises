@@ -136,9 +136,20 @@ function isLowerCase(letter) {
 console.log(isLowerCase("A"));
 console.log(isLowerCase("b"));
 
-//function hasLowerCase(string) that returns if a string has any lower cased letter
+function hasLowerCase(string) {
+    return (/[a-z]/.test(string));
+}
 
+console.log(hasLowerCase("HeLLO"));
+console.log(hasLowerCase("HELLO"));
 // Make a function isSpace(letter) that returns if a character is a space character
+
+function isSpace(letter) {
+    return (/{[  ]/.test(letter));
+}
+
+console.log(isSpace(" "));
+console.log(isSpace("3"));
 
 function isZero(number) {
     return number === 0;
@@ -147,20 +158,118 @@ function isZero(number) {
 console.log(isZero(0));
 console.log(isZero(1));
 
-// Make a function notZero(input) that returns true if the input is not zero
-// Write a function lowerCase(string)
-// Write a function double(n) that returns a number times two
-// Write a function triple(n) that returns a number times 3
-// Write a function quadruple(n) that returns a number times 4
-// Write a function half(n) that returns 1/2 of the provided input
-// Write a function subtract(a, b) that returns a minus b
-// Write a function multiply(a, b) that returns the product of a times b
-// Write a function divide(a, b) that returns a divided by b
-// Write a function remainder(a, b) that returns the remainder after dividing a by b
-// Make a function modulo(a, b) that returns the returns the remainder after dividing a by b
-// Write a function cube(n) that returns n * n * n
-// Write a function squareRoot(n) that returns the square root of the input
-// Write a function cubeRoot(n) that returns the cube root of the input
+function notZero(input) {
+    return input !== 0;
+}
+
+console.log(notZero(0));
+console.log(notZero(1));
+
+function lowerCase(string) {
+    return string.toLowerCase();
+}
+
+console.log(lowerCase("HELLO"));
+console.log(lowerCase("Yo Mama!"));
+
+function double(n) {
+    return parseFloat(n) * 2;
+}
+
+console.log(double(5));
+console.log(double("3"));
+console.log(double("Hello"));
+
+function triple(n) {
+    return parseFloat(n) * 3;
+}
+
+console.log(triple(2));
+console.log(triple(-4));
+console.log(triple("Hello"));
+
+function quadruple(n) {
+    return parseFloat(n) * 4;
+}
+
+console.log(quadruple(2));
+console.log(quadruple(-4));
+console.log(quadruple("Hello"));
+
+function half(n) {
+    return parseFloat(n) / 2;
+}
+
+console.log(half(2));
+console.log(half(-4));
+console.log(half("Hello"));
+
+function subtract(a, b) {
+    return parseFloat(a) - parseFloat(b);
+}
+
+console.log(subtract(5,2));
+console.log(subtract(-4, 4));
+console.log(subtract("Hello", "world"));
+
+function multiply(a, b) {
+    return parseFloat(a) * parseFloat(b);
+}
+
+console.log(multiply(5,2));
+console.log(multiply(-4, 4));
+console.log(multiply("Hello", "world"));
+
+function divide(a, b) {
+    return parseFloat(a) / parseFloat(b);
+}
+
+console.log(divide(5,2));
+console.log(divide(-4, 4));
+console.log(divide("Hello", "world"));
+
+function remainder(a, b) {
+    return parseFloat(a) % parseFloat(b);
+}
+
+console.log(remainder(5,2));
+console.log(remainder(-4, 4));
+console.log(remainder("Hello", "world"));
+
+function modulo(a, b) {
+    var remain = remainder(a,b);
+    return remain;
+}
+
+console.log(modulo(5,2));
+console.log(modulo(-4, 4));
+console.log(modulo("Hello", "world"));
+
+function cube(n) {
+    return parseFloat(n) * parseFloat(n) * parseFloat(n);
+}
+
+console.log(cube(5));
+console.log(cube(-4));
+console.log(cube("Hello"));
+
+function squareRoot(n){
+    return Math.sqrt(n);
+}
+
+console.log(squareRoot(25));
+console.log(squareRoot(-16));
+console.log(squareRoot("Hello"));
+
+
+function cubeRoot(n){
+    return Math.cbrt(n);
+}
+
+console.log(cubeRoot(27));
+console.log(cubeRoot(212));
+console.log(cubeRoot("Hello"));
+
 // Write a function invertSign(number) that returns a negative version of a postive number, a positve version of negative, and false for all else.
 // Write a function degreesToRadians(number)
 // Write a function radiansToDegrees(number)
