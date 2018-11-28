@@ -1,15 +1,13 @@
 "use strict";
 
 //Multiplication Table
-var randomNumber = Math.floor(Math.random() * 10) + 1;
-
 function showMultiplicationTable(input) {
     for (var i = 1; i <= 10; i++) {
         console.log(input + " x " + i + " = " + input * i);
     }
 }
 
-showMultiplicationTable(randomNumber);
+showMultiplicationTable(7);
 
 //Even or Odd
 function isEven(input) {
@@ -26,9 +24,17 @@ for (var i = 0; i < 10; i++) {
 }
 
 //Cascading numbers
-// for (var x = 1; x < 10; x++){
-//     console.log(x);
-// }
+function generatePyramid() {
+    for (var i = 1; i < 10; i++) {
+        var x = "";
+        for (var j = 1; j <= i; j++) {
+            x = x + i;
+        }
+        console.log(x);
+    }
+}
+
+generatePyramid();
 
 //Decreasing 100 to 5 by 5
 for (var y = 100; y >= 5; y--){

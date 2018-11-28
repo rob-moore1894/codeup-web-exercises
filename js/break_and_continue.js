@@ -9,10 +9,9 @@ var oddInput;
 
 function showConfirm() {
     var oddInput = (prompt("Please enter an odd number between 1 and 50: "));
-    switch (isValidEntry(oddInput) === true) {
-        case true: alert("Number to skip is: " + oddInput);
-        break;
-        case false:
+    if (isValidEntry(oddInput) === false) {
+        alert("Number to skip is: " + oddInput);
+        continue;
         // to limit user for limited count
         if (--max_count > 0)
             showConfirm()
