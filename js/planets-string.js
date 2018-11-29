@@ -28,13 +28,10 @@
     var planets = planetsArray.join("<br>");
     console.log(planets);
 
-    function addList(array) {
-        array.unshift("<ul>");
-        array.push("</ul>");
-        return array;
-    }
+    var listPlanets = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
+    console.log(listPlanets);
 
-    console.log(addList(planetsArray));
+
 
 
 
