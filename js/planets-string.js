@@ -28,9 +28,12 @@
     var planets = planetsArray.join("<br>");
     console.log(planets);
 
+    document.body.innerHTML += planets;
+
     var listPlanets = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
     console.log(listPlanets);
 
+    document.body.innerHTML += listPlanets;
 
 
 
