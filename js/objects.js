@@ -146,10 +146,8 @@
      *      ...
      */
 
-    books.forEach(function(book, index){
-        console.log("Book # " + (index + 1) + "\nTitle: " + book.title + "\n" +
-        "Author: " + book.author.firstName + " " + book.author.lastName + "\n" +
-        "---");
+    books.forEach(function(element, index) {
+        showBookInfo(element, index);
     });
 
     /**
@@ -157,10 +155,38 @@
      * - Create a function named `createBook` that accepts a title and author
      *   name and returns a book object with the properties described
      *   previously. Refactor your code that creates the books array to instead
-     *   use your function.
-     * - Create a function named `showBookInfo` that accepts a book object and
+     *  use your function.
+     */
+
+    var newBooks = [];
+
+    function createBook(title, author) {
+        title = prompt("What is the title of the book?");
+        author = prompt("Who is the author?");
+        author = author.split(" ");
+        newBooks = {
+            "bookTitle": title,
+            "bookAuthor": {
+                authorFirstName: author[0],
+                authorLastName: author[1]
+            }
+        };
+        return "Title: " + newBooks.bookTitle + "\n" + "Author: " + newBooks.bookAuthor.authorFirstName + " " + newBooks.bookAuthor.authorLastName + "\n---";
+    }
+
+    console.log(createBook());
+
+    /** - Create a function named `showBookInfo` that accepts a book object and
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+    function showBookInfo(book, index) {
+        console.log("Book # " + (index + 1) + "\nTitle: " + book.title + "\n" +
+                "Author: " + book.author.firstName + " " + book.author.lastName + "\n" +
+                "---");
+    }
+
 
 })();
