@@ -6,7 +6,19 @@
 </head>
 <body>
 
-<h1>Rob Moore</h1>
+<h1 class="title">Rob Moore</h1>
+
+<div class="container">
+    <p id="filler">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quam quod vero voluptates. Consequatur dolores eum exercitationem explicabo id ipsam labore laudantium neque omnis, quasi quisquam ratione rem sequi, veniam.</p>
+
+    <ul class="newFriends">
+        <li id="cassie">Cassie</li>
+        <li id="chase">Chase</li>
+        <li id="bailey">Bailey</li>
+        <li id="medical">Amanda</li>
+    </ul>
+</div>
+
 
 
 <script src="js/jquery-2.2.4.min.js"></script>
@@ -14,7 +26,11 @@
     "use strict";
     $(document).ready(function (){
         alert("DOM is loaded");
+        alert($('#cassie').text()); //alerts the contents of the element with the ID of "cassie"
+        alert($('#medical').text()); //#medical referred to two IDs within the list.  It only alerted the content of the first element with the id of medical
     });
+
+
 </script>
 </body>
 </html>
