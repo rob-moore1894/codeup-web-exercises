@@ -63,16 +63,30 @@
         // Adding marker to the map
         var marker = new google.maps.Marker({
             position: losBarrios,
-            map: map
+            map: map,
+            animation: google.maps.Animation.DROP,
         });
 
         // Adding an InfoWindow
         var infowindow = new google.maps.InfoWindow({
-            content: "Los Barrios... there's food here."
+            content: "<strong>Los Barrios</strong><br></br>There's food here."
         });
 
-// Open the window using our map and marker
-        infowindow.open(map, marker);
+        // Open the window using our map and marker
+        marker.addListener("click",function () {
+            infowindow.open(map, marker);
+        });
+
+        // // Adding an animation to the marker
+        // function toggleBounce() {
+        //     if (marker.getAnimation() !== null) {
+        //         marker.setAnimation(null);
+        //     } else {
+        //         marker.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        // }
+        //
+        // map.addListener("click", toggleBounce());
     })();
 </script>
 </body>
