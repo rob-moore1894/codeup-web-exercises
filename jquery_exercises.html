@@ -6,14 +6,14 @@
 </head>
 <body>
 
-<h1 class="title">Rob Moore</h1>
+<h1 class="codeup">Rob Moore</h1>
 
 <div class="container">
-    <p id="filler">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quam quod vero voluptates. Consequatur dolores eum exercitationem explicabo id ipsam labore laudantium neque omnis, quasi quisquam ratione rem sequi, veniam.</p>
+    <p class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quam quod vero voluptates. Consequatur dolores eum exercitationem explicabo id ipsam labore laudantium neque omnis, quasi quisquam ratione rem sequi, veniam.</p>
 
     <ul class="newFriends">
         <li id="cassie">Cassie</li>
-        <li id="chase">Chase</li>
+        <li id="codeup">Chase</li>
         <li id="bailey">Bailey</li>
         <li id="medical">Amanda</li>
     </ul>
@@ -25,9 +25,15 @@
 <script>
     "use strict";
     $(document).ready(function (){
-        alert("DOM is loaded");
-        alert($('#cassie').text()); //alerts the contents of the element with the ID of "cassie"
-        alert($('#medical').text()); //#medical referred to two IDs within the list.  It only alerted the content of the first element with the id of medical
+
+        //changed the class for the h1 tag, p tag, and ul tag to codeup and added a red border
+        $(".codeup").css({"border-color": "red",
+            "border-width":"1px",
+            "border-style":"solid"});
+
+        //removed codeup from one of the elements - refreshed, border was removed from the ul
+        //put codeup as an id for Chase - refreshed, border did not appear because the border goes around the elements in the class codeup not id
+
     });
 
 
