@@ -26,7 +26,10 @@
     "use strict";
     $(document).ready(function (){
         //set the font-size of all li elements to 20px
-        $("li").css("font-size", "20px");
+        $("li").css({
+            "font-size": "20px",
+            "list-style-type": "none"
+        });
         //Craft selectors that highlight all the h1, p, and li elements
         $("h1").css("background-color", "blue");
         $("p").css("background-color", "grey");

@@ -8,6 +8,8 @@ function getHighest(array) {
 
 console.log(getHighest([3, 2, 1]));
 
+document.body.innerHTML = "Highest number in the array [3, 2, 1] is " + getHighest([3, 2, 1]);
+
 
 // Function named getLowest() that takes in an array of numbers and returns the lowest number
 // My answer
@@ -16,6 +18,8 @@ function getLowest(array) {
 }
 
 console.log(getLowest([1, 2, -11]));
+
+alert("Lowest number in the array [1, 2, -11] is " + getLowest([1, 2, -11]));
 
 
 // Function sumAllNumbers() that takes in a two-dimensional array of numbers and returns the sum of all numbers added together
