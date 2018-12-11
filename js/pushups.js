@@ -36,5 +36,7 @@ function sumAllNumbers(array) {
     } return sum;
 }
 
+
 console.log(sumAllNumbers(arrayOfNumbers));
 console.log(sumAllNumbers([[0, 1, 2, 0],[5, 0],[6, 7, 8]]));
+
