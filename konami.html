@@ -6,14 +6,20 @@
 <body>
 <h1>Konami Code</h1>
 
-<audio id="pop">
+<audio id="song">
     <source src="audio/Lady-Gaga-Bad-Romance.mp3" type="audio/mpeg">
 </audio>
+
+<label for="closeButton">
+    <button id="closeButton">Turn Off</button>
+</label>
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script>
     "use strict";
     $(document).ready(function(){
+
+        $('#closeButton').hide();
 
         $(document).keyup(function(event){
             console.log(event.keyCode);
@@ -38,8 +44,9 @@
                 }
                 if (count === 10) {
                     reset();
-                    alert('Cheat Codes Activated');
-                    $('audio#pop')[0].play();
+                    alert('Muahahaha');
+                    $('audio#song')[0].play();
+                    $('#closeButton').show();
                 }
             } else {
                 reset();
