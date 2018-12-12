@@ -6,12 +6,13 @@
     display: none;
 }
 
-div {
+ul, h2{
+    display: none;
+}
+
+#pic1, #pic2, #pic3 {
     border: 1px solid black;
     display: inline-block;
     margin: 0 auto;
 }
 
-div>#pic1 {
-    background-image: url("/images/army-black-and-white-gun-41161.jpg");
-}

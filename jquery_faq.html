@@ -7,6 +7,14 @@
 </head>
 <body>
 
+<!--At the top of the page, add a div with two elements, an h1 that reads "Would you like to sign up for our newsletter?" and a span that has an 'x' in it. When the 'x' is clicked, hide the entire div element.-->
+<div>
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span>X</span>
+</div>
+
+<h2>Please Register for the Site</h2>
+
 <h1 id="title">FAQ about National Parks</h1>
 
 <dl>
@@ -14,7 +22,6 @@
         <dd class="invisible">There are 60 protected areas identified as National Parks</dd><br>
     <dt>What is the first National Park in the US?</dt>
         <dd class="invisible">Yellowstone National Park became a US National Park in 1872 by President Ulysses S. Grant.</dd><br>
-        <dd class="invisible">Fun Fact: The oldest known National Park is the Tobago Main Ridge Forest Reserve (1775) in Tobago</dd><br>
     <dt>When was the National Park Service established?</dt>
         <dd class="invisible">On August 25, 1916, President Woodrow Wilson signed the act creating the National Park Service, a new federal bureau in the Department of the Interior responsible for protecting the 35 national parks and monuments then managed by the department and those yet to be established.</dd>
     <dt></dt>
@@ -59,9 +66,15 @@
 
 <!--Create 3 divs that each look like a picture Frame; each one should have a unique background image and a button underneath that swaps the image from the frame. Use Traversing functions of jQuery to accomplish this.-->
 
-<div id="pic1" style="width: 300px; height: 300px"></div>
-<div id="pic2" style="width: 300px; height: 300px"></div>
-<div id="pic3" style="width: 300px; height: 300px"></div>
+<div id="pic1">
+    <img src="images/army-black-and-white-gun-41161.jpg" alt="army" style="width: 300px; height: 300px">
+</div>
+<div id="pic2">
+    <img src="images/inspirational-meme.jpg" alt="inspire" style="width: 300px; height: 300px">
+</div>
+<div id="pic3">
+    <img src="images/baby-boy-child-159533.jpg" alt="baby" style="width: 300px; height: 300px">
+</div>
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/jquery_faq.js"></script>
