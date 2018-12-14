@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather_map.css">
+
+</head>
+<body>
+
+    <div id="main-container">
+        <h1 id="title">Search Weather</h1>
+        <div id="searchCity" class="form-inline mx-auto">
+            <label for="weatherButton">
+                <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+                <button id="weatherButton" class="btn btn-primary">Search</button>
+            </label>
+        </div>
+
+        <!--Display Weather Information and Pictures-->
+        <div id="display-container">
+            <div class="row">
+                <div id="show" class="col"></div>
+                <div id="femalePic" class="col"></div>
+                <div id="malePic" class="col"></div>
+            </div>
+        </div>
+
+        <!--Map Area-->
+        <div id="map">
+            <div id="map-canvas"></div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9uTLz9AB7-TywK1q8-Wbj56by33dVRVs"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/weather_map.js"></script>
+
+
+
+</body>
+</html>

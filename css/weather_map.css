@@ -1,0 +1,48 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1px) {
+    #main-container {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid green;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #searchCity {
+        margin-left: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        justify-content: center;
+
+    }
+
+    #weatherButton {
+        background-color: green;
+        color: whitesmoke;
+    }
+
+    #show {
+        text-align: center;
+    }
+
+    #cold-male #cold-female {
+        max-width: 300px;
+        max-height: 200px;
+        padding: 0 .5em;
+        margin: .5em 0;
+    }
+
+    #map-canvas {
+        width: 90%;
+        height: 50vh;
+        margin: 0 auto;
+        overflow: visible;
+    }
+}
