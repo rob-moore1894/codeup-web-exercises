@@ -58,19 +58,19 @@ $(document).ready(function() {
     var geocoder = new google.maps.Geocoder();
 
     // // Geocode our address
-    geocoder.geocode({ "address": data.city.coord.lat, data.city.coord.lon}, function(results, status) {
-
-        // Check for a successful result
-        if (status == google.maps.GeocoderStatus.OK) {
-
-            // Recenter the map over the address
-            map.setCenter(results[0].geometry.location);
-        } else {
-
-            // Show an error message with the status if our request fails
-            alert("Geocoding was not successful - STATUS: " + status);
-        }
-    });
+    // geocoder.geocode({ "address": data.city.coord.lat, data.city.coord.lon}, function(results, status) {
+    //
+    //     // Check for a successful result
+    //     if (status == google.maps.GeocoderStatus.OK) {
+    //
+    //         // Recenter the map over the address
+    //         map.setCenter(results[0].geometry.location);
+    //     } else {
+    //
+    //         // Show an error message with the status if our request fails
+    //         alert("Geocoding was not successful - STATUS: " + status);
+    //     }
+    // });
 
     //Adding marker to the map
     // var marker = new google.maps.Marker({
@@ -89,17 +89,17 @@ function cityLocation(data) {
 
 function current(data) {
     return "Current 24" + "<h3>Weather: " + data.list[1].weather[0].main + "</h3>" +
-        "<h3><strong>Description</strong>: " + data.list[1].weather[0].description + "</h3>" + "<h3><strong>Temperature</strong>: " + data.list[1].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[1].main.temp_min + "<h4>Max: </h4>" + data.list[1].main.temp_max
+        "<h3>Description: " + data.list[1].weather[0].description + "</h3>" + "<h3>Temperature: " + data.list[1].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[1].main.temp_min + "<h4>Max: </h4>" + data.list[1].main.temp_max
 }
 //
 function nextDay(data) {
     return "Next 24" + "<h3>Weather: " + data.list[9].weather[0].main + "</h3>" +
-        "<h3><strong>Description</strong>: " + data.list[9].weather[0].description + "</h3>" + "<h3><strong>Temperature</strong>: " + data.list[9].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[9].main.temp_min + "<h4>Max: </h4>" + data.list[9].main.temp_max
+        "<h3>Description: " + data.list[9].weather[0].description + "</h3>" + "<h3>Temperature: " + data.list[9].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[9].main.temp_min + "<h4>Max: </h4>" + data.list[9].main.temp_max
  }
 
  function thirdDay(data) {
      return "Next 48" + "<h3>Weather: " + data.list[17].weather[0].main + "</h3>" +
-         "<h3><strong>Description</strong>: " + data.list[17].weather[0].description + "</h3>" + "<h3><strong>Temperature</strong>: " + data.list[17].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[17].main.temp_min + "<h4>Max: </h4>" + data.list[17].main.temp_max
+         "<h3>Description: " + data.list[17].weather[0].description + "</h3>" + "<h3>Temperature: " + data.list[17].main.temp + "</h3>" + "<h4>Min: </h4>" + data.list[17].main.temp_min + "<h4>Max: </h4>" + data.list[17].main.temp_max
  }
 
  // function recenterMap(data) {
