@@ -28,14 +28,16 @@
         color: whitesmoke;
     }
 
-    #show {
+    #cityName {
+        width: 100%;
         text-align: center;
+        margin: 0 auto;
     }
 
-    #cold-male #cold-female {
-        max-width: 300px;
-        max-height: 200px;
-        padding: 0 .5em;
+    #current24, #next24, #next48 {
+        text-align: center;
+        width: 25%;
+        padding: 0;
         margin: .5em 0;
     }
 
@@ -43,6 +45,5 @@
         width: 90%;
         height: 50vh;
         margin: 0 auto;
-        overflow: visible;
     }
 }
