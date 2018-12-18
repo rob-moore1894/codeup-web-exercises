@@ -84,6 +84,8 @@ $(document).ready(function() {
 });
 
 function cityLocation(data) {
+    let newLat = data.city.coord.lat;
+    let newLon = data.city.coord.lon;
     return "<h3>" + data.city.name + "</h3>"
 }
 

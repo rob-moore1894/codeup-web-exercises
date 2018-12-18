@@ -56,10 +56,19 @@ $('#users').text(`Average number of Experiential Years: ${ totalYearsOfExperienc
 // Use reduce to get the longest email from the list of users.
 // var longest = arr.reduce(function (a, b) { return a.length > b.length ? a : b; });
 
-const longestEmail = users.reduce(function(a, b) { return a.email.length > b.email.length ? a : b});
+const longestEmail = users.reduce((longestEmailCurrent, user) => {
+    if (user.email.length > longestEmailCurrent.length) {
+        return user.email;
+    }
+    return longestEmailCurrent;
+}, "");
 console.log(longestEmail);
 
 // Use reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
-const usersByName = users.reduce((name, user) => user.name + `${ name }`, "");
+const usersByName = users.reduce((message, user) => {
+if (index === users.length-1) {
+    return `${message}${user.name}.`
+}
+return `${message}${user.name},`},"Your instructors are: ");
 console.log(usersByName);
