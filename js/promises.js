@@ -25,7 +25,7 @@ wait(1000).then(function (resolve) {
 
 // Create a function that accepts a github username, and returns a promise that resolves with the date of the last commit that user made.
 
-const API_TOKEN = '1373dd334678cb0c8e2b38fa4e91a0d95002fa0f';
+const API_TOKEN = '';
 
 const fetchOptions = {
     headers: {'Authorization': `token ${API_TOKEN}`}
